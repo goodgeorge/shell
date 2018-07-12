@@ -52,7 +52,7 @@ We are five-membered project team. Following is the roll no. wise list
 
 ## References and Acknowledgement
 
-We are indebted to Prof. Mandar Mitra for his guidance and support.
+We are indebted to **Prof. Mandar Mitra** ( https://www.isical.ac.in/~mandar/ ) for his guidance and support.
 
 Following is the list of references from where we have obtained useful informations pertaining to our project:
 

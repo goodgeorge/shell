@@ -1,7 +1,7 @@
 # shell
 Implementation of a basic LINUX shell in C
 
-# --------------------------- Basic Information ----------------------------- #
+# ------------- Basic Information -------------- #
 
 (1) As a project work of our Operating System curriculum we have implemented this basic shell program for Linux / Unix like operating system. The program is written entirely in C language. The project description can be found in the link: https://www.isical.ac.in/~mandar/os/projects.txt
 
@@ -19,7 +19,7 @@ Implementation of a basic LINUX shell in C
 	- "echo" command
 	- Simple shell variable substitution
 
-# ------------------ Installation and Execution Guidelines ------------------ #
+# ------- Installation and Execution Guidelines ------- #
 
 (1) We have used GNU readline and history library in this program. If these libraries are not on your system please install the same. Complete installation guideline is given in the following link:
 (https://tiswww.case.edu/php/chet/readline/rltop.html)
@@ -40,7 +40,7 @@ Implementation of a basic LINUX shell in C
 
 		$ ./run.sh
 
-# ------------------------------- Project Group ----------------------------- #
+# ------------- Project Group ------------- #
 
 We are five-membered project team. Following is the roll no. wise list
 
@@ -50,7 +50,7 @@ We are five-membered project team. Following is the roll no. wise list
 	(4) Sourav Karmakar (CS1721)
 	(5) Aditya Panda (CS1723)
 
-# ----------------------- References and Acknowledgement -------------------- #
+# ------ References and Acknowledgemen -------- #
 
 We are indebted to Prof. Mandar Mitra for his guidance and support.
 

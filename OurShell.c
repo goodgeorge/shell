@@ -32,6 +32,7 @@ int status;
 char *input_redirection_file;
 char *output_redirection_file;
 
+
 /********** Declaring Function Prototypes **********/
 
 void clear_variables(); 
@@ -101,9 +102,9 @@ void shell_prompt() {
 
 	if (getcwd(cwd, sizeof(cwd)) != NULL) {
 
-		strcpy(prompt, "\e[1;31mOur_Shell:\e[0m\e[1;32m");
+		strcpy(prompt, "Our_Shell: ");
 		strcat(prompt, cwd);
-		strcat(prompt, "\e[0m$ ");
+		strcat(prompt, "$ ");
 	}
 	else {
 
@@ -424,7 +425,7 @@ int main() {
 	int status;
 	system ("clear");
 	signal(SIGINT, sigintHandler);
-
+	char new_line = 0;
 	using_history();
 
 	do {
@@ -432,7 +433,10 @@ int main() {
 		clear_variables();
 		shell_prompt();
 		input_buffer = readline (prompt);
-		add_history (input_buffer);
+
+
+		if(strcmp(input_buffer,"\n"))
+			add_history (input_buffer);
 
 		if (!(strcmp(input_buffer, "\n") && strcmp(input_buffer,"")))
 			continue;

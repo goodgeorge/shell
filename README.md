@@ -40,15 +40,7 @@ Implementation of a basic LINUX shell in C.
 
 		$ ./run.sh
 
-## Project Group
 
-We are five-membered project team. Following is the roll no. wise list
-
-* Souptik Mukhopadhyay (CS1704)
-* Kushal Bose (CS1714)
-* Sourav Aich (CS1720)
-* Sourav Karmakar (CS1721)
-* Aditya Panda (CS1723)
 
 ## References and Acknowledgement
 

@@ -26,6 +26,7 @@ Implementation of a basic LINUX shell in C.
 
 1. Place the file "Submission_Shell.tar" in suitable location of your filesystem and extract the same.
 
+
 1. There shall be following four files in the extracted directory
 	1. OurShell.c: C source code of our Shell program
 	1. run.sh: Shell script to compile and execute the source code

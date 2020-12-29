@@ -1,6 +1,7 @@
 # OurShell
 Implementation of a basic LINUX shell in C.
-Website : (https://souravaich.github.io/shell/)
+
+Website : https://souravaich.github.io/shell/
 
 ## Basic Information
 

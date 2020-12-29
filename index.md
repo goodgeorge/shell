@@ -47,8 +47,7 @@ We are indebted to [**Prof. Mandar Mitra**](https://www.isical.ac.in/~mandar/) f
 
 Following is the list of references from where we have obtained useful informations pertaining to our project:
 
-1. man pages of following system calls (The list is not exhaustive)
-	wait, dup2, fork, execvp, chdir, signal
+1. [man pages of various system calls](https://linux.die.net/man/)
 
 1. [GNU readline library documentation](https://tiswww.case.edu/php/chet/readline/readline.html)
 

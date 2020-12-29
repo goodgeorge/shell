@@ -1,37 +1,59 @@
-## Welcome to GitHub Pages
+# OurShell
+Implementation of a basic LINUX shell in C.
 
-You can use the [editor on GitHub](https://github.com/souravaich/shell/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Basic Information
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+1. As a project work of our Operating System curriculum we have implemented this basic shell program for Linux / Unix like operating system. The program is written entirely in C language. The project description can be found [here](https://www.isical.ac.in/~mandar/os/projects.txt)
 
-### Markdown
+1. Following functionalities have been implemented so far
+	1. program runs in an infinite loop in which it prints a command prompt, accepts a command, executes the command, and prints the prompt for the 	next command.
+	1. Running jobs in the foreground and background
+	1. simple input/output redirection (>, <)
+	1. Simple pipes (|)
+	1. Handling user interrupt signal (SIGINT)
+	1. Execute both internal commands (ls, pwd, cd etc.) and external commands (using execvp system call)
+	1. Command line editing (with TAB completion)
+	1. Command history (typing "history" will give entire command history), Uparrow and Downarrow key for command history navigation
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+1. Functionalities yet to be implemented
+	1. "echo" command
+	1. Simple shell variable substitution
 
-```markdown
-Syntax highlighted code block
+## Installation and Execution Guidelines
 
-# Header 1
-## Header 2
-### Header 3
+1. We have used GNU readline and history library in this program. If these libraries are not on your system please install the same. Complete installation guideline is given [here](https://tiswww.case.edu/php/chet/readline/rltop.html)
 
-- Bulleted
-- List
+1. Place the file "Submission_Shell.tar" in suitable location of your filesystem and extract the same.
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+1. There shall be following four files in the extracted directory
+	1. OurShell.c: C source code of our Shell program
+	1. run.sh: Shell script to compile and execute the source code
+	1. functiona_dependency.pdf: Functional dependency graph which explains various caller-callee relationship between the functions inside the program
+	1. README.txt: The one you are currently reading
 
-[Link](url) and ![Image](src)
-```
+(4) Open the extracted directory in terminal and run the follwoing command once. This will give execution permission to the shellscript.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+		$ chmod +x run.sh
 
-### Jekyll Themes
+(5) The run using the following command in terminal:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/souravaich/shell/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+		$ ./run.sh
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+## References and Acknowledgement
+
+We are indebted to **Prof. Mandar Mitra** (https://www.isical.ac.in/~mandar/) for his guidance and support.
+
+Following is the list of references from where we have obtained useful informations pertaining to our project:
+
+1. man pages of following system calls (The list is not exhaustive)
+	wait, dup2, fork, execvp, chdir, signal
+
+1. GNU readline library documentation (https://tiswww.case.edu/php/chet/readline/readline.html)
+
+1. GNU history library documentation (https://tiswww.case.edu/php/chet/readline/history.html)
+
+1. A very basic shell implemented by Stephen Brennan. (https://brennan.io/2015/01/16/write-a-shell-in-c/).
+We have taken few basic ideas from this reference.

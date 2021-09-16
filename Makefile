@@ -1,8 +1,10 @@
 
 
-run:
+run: build
 	./OurShell
 	
-build:
-	echo "Start build"
+build: clean
 	gcc -g -Wall main.c -o OurShell -lreadline
+
+clean:
+	rm ./OurShell

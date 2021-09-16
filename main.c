@@ -423,7 +423,7 @@ void tokenize_by_pipe() {
 int main() {
 
 	int status;
-	system ("clear");
+	system("clear");
 	signal(SIGINT, sigintHandler);
 	char new_line = 0;
 	using_history();
